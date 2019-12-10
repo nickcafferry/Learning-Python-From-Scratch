@@ -17,5 +17,8 @@
  The reload function expects the name of an already loaded module object, so you have to have successfully imported a module once before reloading it.
  'reload' is a function that is called, and thereby should come with a parentheses around the module object name. 'import' is a statement. 
  
+Modules serve the role of libraries of tools, and it is just a package of variable names, known as a namespace. The variable names within a module are called attributes.In the broader sheme of things, an attribute is simply a variable name that is attached to a specific object (like a module).
+ 
+ 
  
  
