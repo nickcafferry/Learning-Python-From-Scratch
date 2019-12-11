@@ -24,6 +24,6 @@ From is just like an import, with an extra assignment to names in the importing 
 
 When the dir function is called with the name of an imported module passed in parentheses like this, it returns all the attributes inside that module. Some of the names it returns are names you get 'for free': names with leading and trailing double underscores are built-in names that are always predefined by Python and that have special meaning to the interpreter.
 
-
+Because each file is a self-contained namespace,the names in one file cannot clash with those in another, even if they are spelled the same way.
  
  
