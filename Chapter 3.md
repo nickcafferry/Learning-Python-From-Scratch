@@ -19,6 +19,11 @@
  
 Modules serve the role of libraries of tools, and it is just a package of variable names, known as a namespace. The variable names within a module are called attributes.In the broader sheme of things, an attribute is simply a variable name that is attached to a specific object (like a module).
  
- 
+What makes from different from import?
+From is just like an import, with an extra assignment to names in the importing component. Technically, 'from' copies a module's attributes, such that they become simple variables in the recipient-thus, you can simply refer to the imported string this time as title (a variable) instead of myfile.title (an attribute reference).
+
+When the dir function is called with the name of an imported module passed in parentheses like this, it returns all the attributes inside that module. Some of the names it returns are names you get 'for free': names with leading and trailing double underscores are built-in names that are always predefined by Python and that have special meaning to the interpreter.
+
+
  
  
