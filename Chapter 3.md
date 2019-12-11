@@ -29,4 +29,9 @@ Because each file is a self-contained namespace,the names in one file cannot cla
  Useful tips:
  import versus from: I should point out that the from statement in a sense defeats the namespace partitioning purpose of modules--because the from copies variables from one file to another, it can cause same-named variables in the importing file to be overwritten (and won't warn you if it does). This essentially collapses namespaces together, at least in terms of the copied variables.
  
+ After the first import, later imports do nothing, even if you change and save the module's source file again in another window. This is by design, imports are too expensive an operation to repeat more than once per file, per program run. If you really want to force Python to run the file again in the same session without stopping and restarting the session, you need to instead call the reload function avaivable in the imp standard library module. 
  
+ Python searches for imported modules in every directory listed in sys.path--a Python list of directory name strings in the sys module, which is initialized from a PYTHONPATH enviroment variable, plus a set of standard directories. If you want to import from a directory other than the one you are working in, that directory must generally be listed in your PYTHONPATH setting. 
+
+By contrast, the basic import statement runs the file only once per process, and it makes the file a separate module namespace so that its assignments will not change variables in your scope. The price you pay for the namespace partioning of modules is the need to reload after changes.
+
