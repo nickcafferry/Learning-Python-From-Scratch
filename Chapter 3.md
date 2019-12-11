@@ -35,3 +35,4 @@ Because each file is a self-contained namespace,the names in one file cannot cla
 
 By contrast, the basic import statement runs the file only once per process, and it makes the file a separate module namespace so that its assignments will not change variables in your scope. The price you pay for the namespace partioning of modules is the need to reload after changes.
 
+IDIE hint of the day: Alt-P key combination to scroll backward through the command history to repeat prior command, and Alt-N to scroll forward. Or just simply position the cursor on them.
