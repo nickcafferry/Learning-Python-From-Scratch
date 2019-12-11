@@ -36,3 +36,27 @@ Because each file is a self-contained namespace,the names in one file cannot cla
 By contrast, the basic import statement runs the file only once per process, and it makes the file a separate module namespace so that its assignments will not change variables in your scope. The price you pay for the namespace partioning of modules is the need to reload after changes.
 
 IDIE hint of the day: Alt-P key combination to scroll backward through the command history to repeat prior command, and Alt-N to scroll forward. Or just simply position the cursor on them.
+
+# Using IDIE:
+1. You must add ".py" explicitly when saving your files.
+2. Run scripts by selecting Run-Run Module in text edit windows, not by interactive imports and reloads.
+3. You need to reload only modules being tested interactively.
+4. You can customize IDIE.
+5. There is currently no clear-screen option in IDIE. Just press the ENTER key.
+6. tkinter GUI and threaded programs may not work well with IDIE.
+7. If connection error arise, try starting IDIE in single-process mode.
+8. Beware of some IDIE usability features.
+
+# Debugging Python Code
+1. Do nothing; 2. insert print statements; 3. Use IDE GUI debuggers; 4. Use the pdb command-line debugger; 5. Other options.
+
+
+# Test Your Knowledge: Quiz
+1. How can you start an interactive interpreter session?
+2. Where do you type a system command line to launch a script file?
+3. Name four or more ways to run the code saved in a script file.
+4. Name two pitfalls related to clicking file icons on Windows.
+5. Why might you need to reload a module?
+6. How do you run a script from within IDIE?
+7. Name two pitfalls related to using IDIE.
+8. What is a namespace, and how does it relate to module files?
