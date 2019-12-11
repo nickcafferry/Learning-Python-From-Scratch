@@ -26,4 +26,7 @@ When the dir function is called with the name of an imported module passed in pa
 
 Because each file is a self-contained namespace,the names in one file cannot clash with those in another, even if they are spelled the same way.
  
+ Useful tips:
+ import versus from: I should point out that the from statement in a sense defeats the namespace partitioning purpose of modules--because the from copies variables from one file to another, it can cause same-named variables in the importing file to be overwritten (and won't warn you if it does). This essentially collapses namespaces together, at least in terms of the copied variables.
+ 
  
