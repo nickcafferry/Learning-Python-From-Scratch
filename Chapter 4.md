@@ -48,3 +48,4 @@ Implementation-related types       Compiled code, stack tracebacks (Part 4, Part
 
 Just as importantly, once you create an object, you bind its operation set for all time--you can perform only string operations on a string and list operations on a list. As you'll learn, Python is dynamically typed (it keeps track of types for you automatically instead of requiring declaration code), but it is also strongly typed (you can perform on an object only operations that are valid for its type)
 
+Notice that the plus sign (+) means different things for different objects: addition for numbers, and concatenation for strings. This is a general property fo Python that we call polymorphism later in the book. In sum, the meaning of an operation depends on the objects being operated on. As you'll see when we study dynamic typing, this polymorphism property accounts for much of the conciseness and flexibility of Python code.
