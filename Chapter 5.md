@@ -12,4 +12,5 @@ A Complete inventory of Python's numeric toolbox includes:
 
 # Numeric Literals
 
-* 
+* Literal--------------------Interpretation
+  1234,-24,0,99999
