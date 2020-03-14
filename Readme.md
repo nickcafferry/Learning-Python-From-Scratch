@@ -15,4 +15,4 @@
  Ch36-Ch39 are officially optional reading. They are advanced topic chapters for most programmers using simple ASCII strings.
  
  
- 
+ (https://github.com/nickcafferry/Learning-Python-4th-Edition/blob/master/Project/Text.gif)
