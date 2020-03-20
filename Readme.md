@@ -3,7 +3,7 @@
  https://github.com/nickcafferry/Learning-Python-4th-Edition/blob/master/learning-python.pdf
  # New Chapters 
  
- ![https://github.com/nickcafferry/Learning-Python-4th-Edition/blob/master/Pictures/timg.jpg]
+ ![](https://github.com/nickcafferry/Learning-Python-4th-Edition/blob/master/Pictures/timg.jpg)
  
  Ch27-Ch35: More realisitic example for OOP.
 
