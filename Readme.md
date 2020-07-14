@@ -4,8 +4,6 @@
  
  # New Chapters 
  
- ![](https://github.com/nickcafferry/Learning-Python-4th-Edition/blob/master/Pictures/timg.jpg)
- 
  Ch27-Ch35: More realisitic example for OOP.
 
  Ch36: Details on Unicode and byte strings; Differences between two editions 3.0 and 2.6.
