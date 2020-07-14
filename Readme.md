@@ -1,4 +1,5 @@
- # About the 4th Edition
+ # 欢迎学习Learning Python 3rd
+
  The Book Link https://github.com/nickcafferry/Learning-Python-4th-Edition/blob/master/learning-python.pdf
  
  # New Chapters 
