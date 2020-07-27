@@ -59,6 +59,7 @@ used by the top-level file(and possibly elsewhere). In a word, top-level files u
 ## Imports and Attributes
 
 A more concrete example will be given. Suppose that the file a.py is chosen to be the top-leve file, it will be a simple text file of statments, which is executed from top to bottom when launched. Both file b.py and file c.py are modules. 
+`b.py`
 ```python
 def spam(text):
     print(text,'spam')
