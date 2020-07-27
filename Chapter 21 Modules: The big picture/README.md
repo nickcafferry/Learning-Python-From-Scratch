@@ -6,13 +6,16 @@ in this chapter. In concrete terms, modules usually correspond to Python program
 Modules are processed with two statements and one important function:
 
 `import`:     
-      Lets a client (or importer) fetch a module as a whole
+       
+ Lets a client (or importer) fetch a module as a whole
 
 `from`:
-      Allows clients to fetch some particular units from a module
+      
+ Allows clients to fetch some particular units from a module
    
 `imp.reload`:
-      Provides a way to reload a module without stopping Python
+      
+ Provides a way to reload a module without stopping Python
    
 Since Chapter 3 introduced module basics before and we've been using them ever since, this chapter will expand on __core module concepts__ and more __advanced module usage__.
 The first chapter offers an overlook at role of modules in overall program structure.
@@ -28,5 +31,25 @@ system.
 
 Modules have at least three roles from an abstract perspective:
 
-`Code reuse`
-      One of basic implementations is that you can save code in files permanently. 
+`Code reuse`: 
+      
+ One of basic implementations is that you can save code in files permanently. 
+ 
+ `System namespace partitioning`:
+ 
+ Modules are also the highest-level program organization unit in Python. Essentially, 
+ they are just packages of names. Module is just the guy who can group system components
+ 
+ `Implementing shared services or data`:
+ 
+ From an operational perspective, modules are very helpful when it comes to embedding 
+ a large object into a module. This object will be usually shared by many clients.
+ 
+ ## Python Program Architecture
+ 
+The complexity of Python programs might be underestimated by you because of my description of Python programs. In reality, programs usually involve more than just one file. At the end of day, you will certainly wind up using external files that someone else has already written.
+ 
+This section introduces the general architecture of Python programs - the way you divide a program into a collection of source files (a.k.a modules). You baiscally need to link parts into a whole. 
+
+## How to Structure a Program
+
