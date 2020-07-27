@@ -53,3 +53,5 @@ This section introduces the general architecture of Python programs - the way yo
 
 ## How to Structure a Program
 
+Basically, a Python program consist of two parts. One is _top_level_ file, which contains the main flow of your program-this is the file you run to launch your application. The other is zero or more supplemental files, which we usally name _modules_ in Python. The module files are libraries of tools used to collect compoents
+used by the top-level file(and possibly elsewhere). In a word, top-level files use tools defined in module files, and modules use tools defined in other modules.
