@@ -67,3 +67,9 @@ def spam(text):
     print(text,'spam')
 ```
 
+`a.py`
+
+```python
+import b
+b.spam('gumby')
+```
