@@ -104,3 +104,6 @@ Top-level files are oftern designed to be executed directly and not imported at 
 3. Run It
 
 The final step is to execute the byte code generated in step 2. As mentioned before, the byte code file '.pyc' is necessary for execution and even without the source file '.py', the program can run smoothly.
+
+Python keeps already imported modules in the built-in `sys.modules` and you can always keep track of what's been loaded. And a single command `list(sys.modules.keys())` will print all the imported modules, including built-ins and standard library.
+
