@@ -99,3 +99,8 @@ After finding a source code file that matches an import statement by traversing 
 
 Python will check the file timestamps and if the byte code file is older than the source file, automatically regeneratres the byte code when the program is run. In addition, if Python only find the .pyc file without the source file, it simply loads the byte code directly (this means you can ship a program as just byte code files and don't necessarily need source file). In other words, the compile step is bypassed if possible to speed program startup.
 
+Top-level files are oftern designed to be executed directly and not imported at all.
+
+3. Run It
+
+The final step is to execute the byte code generated in step 2. As mentioned before, the byte code file '.pyc' is necessary for execution and even without the source file '.py', the program can run smoothly.
