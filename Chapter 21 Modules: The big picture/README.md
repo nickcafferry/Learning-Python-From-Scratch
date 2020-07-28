@@ -73,3 +73,29 @@ def spam(text):
 import b
 b.spam('gumby')
 ```
+
+The object.attribute notation is used through Python scripts.
+ 
+## Standard Library Modules
+
+Python automatically comes with a large collection of utility modules known as the standard library. This collection has roughly 200 modules large at last count, contains platform-independent support for common programming tasks: operating system interfaces, object persistence, text pattern matching, network and Internet scripting, GUI construction.
+
+## How Imports Work
+
+So far in this book, the author hasn't explained what happens when you are importing modules. Let's make it a little bit more concerete. 
+
+Some C programmers like to compare the Python module import operation to a C `#include`. They really shouldn't. In Python, imports are not just textual insertions of one file into another. They are really runtime operations that will perform 3 distinct steps:
+1. Find the module's file;
+2. Compile it to byte code (if needed);
+3. Run the module's code to build the objects it defines.
+
+Just bear in mind that all three of these steps are carried out only the first time a module is imported during a program's execution; later imports will bypass all of three steps and simply fetch the already loaded module object in memory. Technically, Python does this by sorting loaded modules in a table named sys.modules and checking there at start of an import operation.
+
+1. Find It
+Python will locate the module file referenced by an import statement. Python uses a standard module search path to locate the module file corresponding to an import statement.
+
+2. Compile It (Maybe)
+After finding a source code file that matches an import statement by traversing the module search path, Pytho next compiles it to byte code, if necessary. 
+
+Python will check the file timestamps and if the byte code file is older than the source file, automatically regeneratres the byte code when the program is run. In addition, if Python only find the .pyc file without the source file, it simply loads the byte code directly (this means you can ship a program as just byte code files and don't necessarily need source file). In other words, the compile step is bypassed if possible to speed program startup.
+
