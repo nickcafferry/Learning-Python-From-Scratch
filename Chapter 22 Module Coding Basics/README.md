@@ -26,3 +26,5 @@ name1 = module.name1 # Copy names out by assignment
 name2 = module.name2
 del module          # Get rid of the module name
 ```
+
+When we use the `from *` form of this statement (`from module import *`), the equivalence, but all the top-level names in the module are copied over to the importing scope this way.
