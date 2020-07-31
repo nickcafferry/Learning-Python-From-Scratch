@@ -11,4 +11,18 @@ def printer(x):
   print(x)
 ```
 
+## import and from Equivalence
 
+Basically, a from statement like this one:
+
+```python
+from module import name1, name2 # Copy these two names
+```
+is equivalent to this statement sequence:
+
+```python
+import module # Fetch the module object
+name1 = module.name1 # Copy names out by assignment
+name2 = module.name2
+del module          # Get rid of the module name
+```
