@@ -147,8 +147,8 @@ Table of Content
    
    24_Advanced_Module_Topics/index
 
-许可证(License)
+License
 ==============
 
-MIT许可证请参见 `MIT LICENSE <https://github.com/nickcafferry/tensorflow/blob/master/LICENSE>`_
+See `MIT LICENSE <https://github.com/nickcafferry/tensorflow/blob/master/LICENSE>`_
 
