@@ -25,9 +25,8 @@ Learning Python From Scratch (version : |version|)
 ============================
 
 Learning Python From Scratch ::
-   在2015年的时候已经成为开源项目, 自从那之后它已经成为Github中starred最多的机器学习库. TensorFlow的受欢迎度主要归功于它能帮助程序员创造计算图(computational graphs), 自动微分 (automatic differentation) 和 可定制性 (customizability). 由于这些特性，TensorFlow是一个强有力的灵活性高的工具,  用于解决很多机器学习的问题. 
+   How to learn python from scratch. Python is a popular open source programming language used for both standalone programs and scripting applications. Free, portable, powerful, and easy to learn, and fun to use are what make python outstanding among many programming language. This repository is to bring you quickly up to speed on the fundamentals of the core Python language. 
 
-本教程阐述很多机器学习算法, 以及如何把它们应用到实际情况中, 以及如何诠释所得到的结果.
 
 .. important::
 
