@@ -2,8 +2,8 @@
 
 -------------------
 
-.. |Documentation Status| image:: https://readthedocs.org/projects/tensorflow-ml/badge/?version=latest
-   :target: https://tensorflow-ml.readthedocs.io/zh/latest/?badge=latest
+.. |Documentation Status| image:: https://readthedocs.org/projects/learning-python-from-scratch/badge/?version=latest
+   :target: https://learning-python-from-scratch.readthedocs.io/en/latest/?badge=latest
 .. |MIT License| image:: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
    :target: http://choosealicense.com/licenses/mit/
 .. |Python version| image:: https://img.shields.io/badge/python-3.7,3.8-brightgreen.svg
