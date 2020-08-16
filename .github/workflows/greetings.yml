@@ -1,13 +1,59 @@
-name: Greetings
+name: Build up document
 
-on: [pull_request, issues]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
-  greeting:
+  build_docs_and_deploy:
     runs-on: ubuntu-latest
+    name: build up document and deploy
+
     steps:
-    - uses: actions/first-interaction@v1
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Message that will be displayed on users'' first issue'
-        pr-message: 'Message that will be displayed on users'' first pr'
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Clone pre repositories
+      run: |
+        cd ..
+        git clone -b push https://github.com/nickcafferry/Learning-Python-From-Scratch.git manim
+        cd manim
+    
+    - name: Install setuptools
+      run: |
+        cd ..
+        pip3 install --upgrade pip
+        wget --no-check-certificate  https://pypi.python.org/packages/source/s/setuptools/setuptools-19.6.tar.gz#md5=c607dd118eae682c44ed146367a17e26
+        tar -zxvf setuptools-19.6.tar.gz
+        cd setuptools-19.6
+        sudo python3 setup.py build
+        sudo python3 setup.py install
+    
+    - name: Install sphinx
+      run: |
+        cd ..
+        git clone https://github.com/sphinx-doc/sphinx
+        cd sphinx
+        pip3 install .
+        pip3 install sphinx_rtd_theme
+        pip3 install jieba
+    
+    - name: Install manim env
+      run: |
+        cd ../manim
+        pip3 install -r requirements.txt
+    
+    - name: Build document with Sphinx
+      run: |
+        export PATH="$PATH:/home/runner/.local/bin:/home/runner/Learning-Python-From-Scratch/manim"
+        make html
+        cd build/html
+        echo "learningpython-mlms.org" > CNAME
+        
+    - name: Deploy to GitHub pages
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build/html
