@@ -54,7 +54,7 @@ Learning Python From Scratch ::
    
    - ...
    
-   - :ref:`Chapter 24 <label24>`
+   - :ref:`Chapter 24: Advanced Module Topics<label24>` 
 
 -------------
 
@@ -145,7 +145,7 @@ Table of Content
    :maxdepth: 3
    :caption: 
    
-   24_Advanced_Module_Topics/index
+   Chapter_24_Advanced_Module_Topics/index
 
 License
 ==============
