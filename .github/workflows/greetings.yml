@@ -17,6 +17,7 @@ jobs:
     - name: Clone pre repositories
       run: |
         cd ..
+        mkdir manim
         git clone -b push https://github.com/nickcafferry/Learning-Python-From-Scratch.git manim
         cd manim
     
