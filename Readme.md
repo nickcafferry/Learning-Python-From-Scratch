@@ -1,7 +1,7 @@
  [![Documentation Status](https://readthedocs.org/projects/learning-python-from-scratch/badge/?version=latest)](https://learning-python-from-scratch.readthedocs.io/en/latest/?badge=latest)
  [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://choosealicense.com/licenses/mit/)
  
- # 欢迎学习Learning Python 3rd
+ # Welcom to Learning Python 3rd
 
  The Book Link https://github.com/nickcafferry/Learning-Python-4th-Edition/blob/master/learning-python.pdf
  
