@@ -1,6 +1,6 @@
 var log = console.log.bind(console);
 
-var imgPath = 'selfie-monkey.jpg';
+var imgPath = 'https://github.com/nickcafferry/Learning-Python-From-Scratch/blob/master/source/asserts/html5-css3-3d-cube-puzzle/selfie-monkey.jpg';
 
 var cubetwo = new window.CubeTwo({
   cubeComponent: document.getElementById('cubetwo-component-1'),
