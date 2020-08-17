@@ -143,7 +143,7 @@ Table of Content
 .. _label24:
 .. toctree::
    :maxdepth: 3
-   :caption: 
+   :caption: Advanced Module Topics
    
    Chapter_24_Advanced_Module_Topics/index
 
