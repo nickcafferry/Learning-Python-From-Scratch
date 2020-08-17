@@ -12,7 +12,7 @@ Little Experimental
     
       <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
     
-          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="https://github.com/nickcafferry/Learning-Python-From-Scratch/blob/master/source/asserts/html5-css3-3d-cube-puzzle/css/style.css">
     
       
     </head>
@@ -366,7 +366,7 @@ Little Experimental
       <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
     <script src='https://codepen.io/kunukn/pen/81d2a0d609b2dd7ade6aeb5d5be42e24.js'></script>
     
-        <script  src="js/index.js"></script>
+        <script  src="https://github.com/nickcafferry/Learning-Python-From-Scratch/blob/master/source/asserts/html5-css3-3d-cube-puzzle/js/index.js"></script>
     
     </body>
     </html>
