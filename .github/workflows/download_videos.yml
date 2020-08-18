@@ -23,7 +23,7 @@ jobs:
         echo '======================='
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-        you-get --playlist -o ./you_get/ 'https://youtu.be/GZBIPwdGtkk?list=PLBkISg6QfSX9HL6us70IBs9slFciFFa4W'
+        you-get --playlist -o ./you_get/ 'https://www.bilibili.com/video/BV1z4411u76M/?spm_id_from=333.788.videocard.2'
         ls
         echo '------------------------------'
         cd you_get
@@ -36,7 +36,7 @@ jobs:
         git config --global user.name "nickcafferry"
         git init
         cd source/asserts/videos/
-        git add Diving_into_machine_learning_through_ten.mp4
+        git add -A
         git status 
         git commit -m "Add a video"
         ls
