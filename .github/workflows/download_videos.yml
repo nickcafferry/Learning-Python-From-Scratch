@@ -22,7 +22,7 @@ jobs:
         ls
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/tensorflow-doc-zh/you_get"
-        you-get -o ~/you_get/ -O Diving_into_machine_learning_through_ten.mp4 'https://youtu.be/GZBIPwdGtkk?list=PLBkISg6QfSX9HL6us70IBs9slFciFFa4W'
+        you-get -o ~/you_get/ -O Diving_into_machine_learning_through_ten 'https://youtu.be/GZBIPwdGtkk?list=PLBkISg6QfSX9HL6us70IBs9slFciFFa4W'
         ls
         echo '------------------------------'
         cd Learning-Python-From-Scratch/
