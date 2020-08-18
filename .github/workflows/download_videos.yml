@@ -1,0 +1,35 @@
+name: download videos
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_docs_and_deploy:
+    runs-on: ubuntu-latest
+    name: download
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    
+    - name: Install You-get
+      id: videos
+      run: |
+        ls
+        echo '------------------------------'
+        git config --global user.email "ucecwme@ucl.ac.uk"
+        git config --global user.name "nickcafferry"
+        git init
+        cd Learning-Python-From-Scratch/tree/master/source/asserts/videos/
+        mkdir you_get
+        cd you_get
+        pip3 install you-get
+        you-get -O Diving_into_machine_learning_through_ten.mp4 'https://youtu.be/GZBIPwdGtkk?list=PLBkISg6QfSX9HL6us70IBs9slFciFFa4W'
+        git add Diving_into_machine_learning_through_ten.mp4
+        git status 
+        git commit -m "Add a video"
+        ls
+        git push origin master
+    
