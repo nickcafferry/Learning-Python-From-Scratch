@@ -1,1 +1,21 @@
-docker run -it --rm tensorflow/tensorflow bash
+name: Delete documents
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_docs_and_deploy:
+    runs-on: ubuntu-latest
+    name: build up document and deploy
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Clone pre repositories
+      run: |
+        docker run -it --rm tensorflow/tensorflow bash
+
+
