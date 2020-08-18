@@ -30,7 +30,7 @@ jobs:
         ls 
         echo '~~~~~~~~~~~~~~~~~~~~~~'
         cd ../
-        cp you_get/. Learning-Python-From-Scratch/source/asserts/videos/
+        cp -r you_get/. Learning-Python-From-Scratch/source/asserts/videos/
         cd Learning-Python-From-Scratch/
         git config --global user.email "ucecwme@ucl.ac.uk"
         git config --global user.name "nickcafferry"
