@@ -22,7 +22,7 @@ jobs:
         git config --global user.email "ucecwme@ucl.ac.uk"
         git config --global user.name "nickcafferry"
         git init
-        cd Learning-Python-From-Scratch/tree/master/source/asserts/videos/
+        cd source/asserts/videos/
         mkdir you_get
         cd you_get
         pip3 install you-get
