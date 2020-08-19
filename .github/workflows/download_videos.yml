@@ -23,7 +23,7 @@ jobs:
         echo '======================='
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-        you-get --debug --playlist -o ./you_get/ 'https://www.bilibili.com/video/BV187411f7z9?p=1'
+        you-get -x 127.0.0.1:8087 --playlist -o ./you_get/ 'https://www.bilibili.com/video/BV187411f7z9?p=1'
         ls
         echo '------------------------------'
         cd you_get
