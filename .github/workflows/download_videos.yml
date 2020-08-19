@@ -23,15 +23,15 @@ jobs:
         echo '======================='
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-        you-get --playlist -o ./you_get/ 'https://www.bilibili.com/video/BV1Bc411h7FR'
+        you-get --playlist -o ./you_get/ 'https://www.bilibili.com/video/BV1Px41167w5?p=17'
         ls
         echo '------------------------------'
         cd you_get
         ls 
         echo '~~~~~~~~~~~~~~~~~~~~~~'
         cd ../
-        mkdir Learning-Python-From-Scratch/source/asserts/videos/CALTMachineLearningBases
-        cp -r you_get/. Learning-Python-From-Scratch/source/asserts/videos/CALTMachineLearningBases/
+        mkdir Learning-Python-From-Scratch/source/asserts/videos/MichiganOpenCourse
+        cp -r you_get/. Learning-Python-From-Scratch/source/asserts/videos/MichiganOpenCourse/
         cd Learning-Python-From-Scratch/
         git config --global user.email "ucecwme@ucl.ac.uk"
         git config --global user.name "nickcafferry"
@@ -39,7 +39,7 @@ jobs:
         cd source/asserts/videos/
         git add -A
         git status 
-        git commit -m "Add a video"
+        git commit -m "Add some videos"
         ls
         git push origin master
     
