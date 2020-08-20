@@ -5,7 +5,7 @@ import time
  
 urls = "https://sherman.fe.liulishuo.com/dubbing?shareId=1597934420:4a40e7e1bed498ed"
 print "\nAccess web page start..."
-brushNum = 3600
+brushNum = 360000
 for i in range(brushNum):
   url = urls
   socket.setdefaulttimeout
@@ -16,10 +16,33 @@ for i in range(brushNum):
   'Connection':'close',
   'Referer':None 
   }
-  req_timeout = 1
+  req_timeout = 240
   req = urllib2.Request(url,None,req_header)
   resp = urllib2.urlopen(req,None,req_timeout)
   html = resp.read()
+  
+  req = urllib2.Request("https://sherman.fe.liulishuo.com/dubbing?userLessonId=MDgwM2U4ODAwMDAxNDgyMA%3D%3D",None,req_header)
+  resp = urllib2.urlopen(req,None,req_timeout)
+  html = resp.read()
+  
+  req = urllib2.Request("https://sherman.fe.liulishuo.com/dubbing?userLessonId=MDdjM2U4ODAwMDAxNDgxZg%3D%3D",None,req_header)
+  resp = urllib2.urlopen(req,None,req_timeout)
+  html = resp.read()
+  
+  req = urllib2.Request("https://sherman.fe.liulishuo.com/dubbing?userLessonId=MDU4M2U4ODAwMDAxNDgxNg%3D%3D",None,req_header)
+  resp = urllib2.urlopen(req,None,req_timeout)
+  html = resp.read()
+  
+  req = urllib2.Request("https://sherman.fe.liulishuo.com/dubbing?userLessonId=MDI4M2U4ODAwMDAxNDgwYQ%3D%3D",None,req_header)
+  resp = urllib2.urlopen(req,None,req_timeout)
+  html = resp.read()
+  
+  req = urllib2.Request("https://sherman.fe.liulishuo.com/dubbing?userLessonId=ZmZjM2U4ODAwMDAxNDdmZg%3D%3D",None,req_header)
+  resp = urllib2.urlopen(req,None,req_timeout)
+  html = resp.read()
+  
   print "Success!\t",i + 1
   print "Rest 1 seconds to continue...\n"
-  time.sleep(1)
+  time.sleep(10)
+
+
