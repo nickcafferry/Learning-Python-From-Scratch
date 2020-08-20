@@ -1,0 +1,30 @@
+name: Build up document
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_docs_and_deploy:
+    runs-on: ubuntu-latest
+    name: build up document and deploy
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    
+    - name: Install setuptools
+      run: |
+        cd ..
+        pip3 install --upgrade pip
+        wget --no-check-certificate  https://pypi.python.org/packages/source/s/setuptools/setuptools-19.6.tar.gz#md5=c607dd118eae682c44ed146367a17e26
+        tar -zxvf setuptools-19.6.tar.gz
+        cd setuptools-19.6
+        sudo python2 setup.py build
+        sudo python2 setup.py install
+        echo "==============================================================================="
+        
+        cd Learning-Python-From-Scratch/Project/
+        sudo python2 test.py
+    
