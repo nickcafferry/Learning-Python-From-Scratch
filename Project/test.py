@@ -1,25 +1,25 @@
-import requests
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+# -*- coding=utf-8 -*- 
+import urllib2
+import socket
 import time
-
-while True:
  
-    chromeOptions = webdriver.ChromeOptions()
-     
-    browser = webdriver.Chrome('C:\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe', options=chromeOptions) #浏览器驱动
-     
-    browser.delete_all_cookies()  # 删除cookie
-     
-     
-    browser.get("https://www.bilibili.com/video/av00000002") #视频地址
-     
-    element = WebDriverWait(browser, 15).until( #等待播放按钮能够被加载并且能够被点击，15s后如果还没加载完成并且不满足被点击的条件，就抛出异常
-        EC.element_to_be_clickable((By.XPATH, '//*[@id="bilibiliPlayer"]/div[1]/div[1]/div[8]/video'))
-    )
-    element.click()
-    print(browser.get_cookies())
-    time.sleep(100)# 等待时常
-    browser.quit()
+urls = ["https://sherman.fe.liulishuo.com/dubbing?shareId=1597934420:4a40e7e1bed498ed"]
+print "\nAccess web page start..."
+brushNum = 3600
+for i in range(brushNum):
+  url = urls
+  socket.setdefaulttimeout
+  req_header = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
+  'Accept':'text/html;q=0.9,*/*;q=0.8',
+  'Accept-Charset':'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
+  'Accept-Encoding':'gzip',
+  'Connection':'close',
+  'Referer':None 
+  }
+  req_timeout = 60
+  req = urllib2.Request(url,None,req_header)
+  resp = urllib2.urlopen(req,None,req_timeout)
+  html = resp.read()
+  print "Success!\t",i + 1
+  print "Rest 1 seconds to continue...\n"
+  time.sleep(1)
