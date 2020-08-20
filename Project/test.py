@@ -16,7 +16,7 @@ for i in range(brushNum):
   'Connection':'close',
   'Referer':None 
   }
-  req_timeout = 60
+  req_timeout = 1
   req = urllib2.Request(url,None,req_header)
   resp = urllib2.urlopen(req,None,req_timeout)
   html = resp.read()
