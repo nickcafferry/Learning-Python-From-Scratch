@@ -1,4 +1,4 @@
-name: run some tests
+name: tests webbrower
 
 on:
   push:
