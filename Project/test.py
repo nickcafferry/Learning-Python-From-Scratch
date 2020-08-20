@@ -3,7 +3,7 @@ import urllib2
 import socket
 import time
  
-urls = ["https://sherman.fe.liulishuo.com/dubbing?shareId=1597934420:4a40e7e1bed498ed"]
+urls = "https://sherman.fe.liulishuo.com/dubbing?shareId=1597934420:4a40e7e1bed498ed"
 print "\nAccess web page start..."
 brushNum = 3600
 for i in range(brushNum):
