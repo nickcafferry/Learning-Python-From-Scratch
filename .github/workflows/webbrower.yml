@@ -20,4 +20,4 @@ jobs:
         echo "==============================================================================="
         
         cd Learning-Python-From-Scratch/Project/
-        sudo python2 test2.py
+        sudo python3 test2.py
