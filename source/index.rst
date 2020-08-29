@@ -59,6 +59,35 @@ Learning Python From Scratch ::
 -------------
 
 
+.. raw:: html
+
+    </div>
+    <div class="zzsc-content">
+	         <canvas id="clock1_" width="200px" height="200px">
+	         </canvas>
+    </div>
+
+    <script src="https://www.html5tricks.com/demo/html5-canvas-15-clock/js/canvas_clock.js"></script>
+    <script>
+    	  clockd1_={
+    			  "indicate": true,
+    			  "indicate_color": "#222",
+    			  "dial1_color": "#666600",
+    			  "dial2_color": "#81812e",
+    			  "dial3_color": "#9d9d5c",
+    			  "time_add": 1,
+    			  "time_24h": true,
+    			  "date_add":3,
+    			  "date_add_color": "#999",
+    			 };
+    	  var c = document.getElementById('clock1_');
+    	  cns7_ = c.getContext('2d');
+    
+    	  clock_dots(200,cns7_,clockd1_);
+    
+    </script>
+
+
 
 Table of Content
 ====
