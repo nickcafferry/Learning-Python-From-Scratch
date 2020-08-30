@@ -88,10 +88,6 @@ Learning Python From Scratch ::
     </script>
 
 
-
-.. raw:: html
-   :file: playground.html
-
 Table of Content
 ====
   
