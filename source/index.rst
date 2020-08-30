@@ -89,6 +89,9 @@ Learning Python From Scratch ::
 
 
 
+.. raw:: html
+   :file: playground.html
+
 Table of Content
 ====
   
