@@ -1,4 +1,4 @@
- ![Build up document](https://github.com/nickcafferry/Learning-Python-From-Scratch/workflows/Build%20up%20document/badge.svg)
+ ![deploy](https://github.com/nickcafferry/Learning-Python-From-Scratch/workflows/deploy/badge.svg)
  [![Documentation Status](https://readthedocs.org/projects/learning-python-from-scratch/badge/?version=latest)](https://learning-python-from-scratch.readthedocs.io/en/latest/?badge=latest)
  [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://choosealicense.com/licenses/mit/)
  [![Python version](https://img.shields.io/badge/python-3.7,3.8-brightgreen.svg)](https://www.python.org/)
