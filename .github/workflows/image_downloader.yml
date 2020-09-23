@@ -1,0 +1,51 @@
+name: images downloader
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_docs_and_deploy:
+    runs-on: ubuntu-latest
+    name: build up document and deploy
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Clone pre repositories
+      run: |
+        ls
+        echo '------------------------------'
+        git config --global user.email "ucecwme@ucl.ac.uk"
+        git config --global user.name "nickcafferry"
+        git init
+        cd ./source/asserts/images/
+        
+        cd book_images/
+        ls
+        if [ -f "0.jpg" ];then
+           find . -name "*.jpg" | xargs git rm -rf
+           git commit -m "delete some pics."
+           else
+           echo "passing"
+        fi
+        echo '============================================'
+        export PATH="$PATH:/home/runner/.local/bin:/home/runner/tensorflow-doc-Chinese/tensorflow-doc-Chinese/source/assets/images/book_images"
+        pip3 install pillow
+        pip3 install --upgrade pip
+        pip3 install wheel
+        python3.6 -m pip install -U pymupdf
+        ls -lt
+        echo "--------------------------------------------"
+        
+        python3.6 test.py
+        git add -A
+        git commit -m "transforming a book into pngs"
+        echo "Transform pdf into pics"
+        ls -lt
+        
+        cd ../../../../
+        ls
+        git push origin master
