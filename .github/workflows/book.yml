@@ -1,4 +1,4 @@
-name: images downloader
+name: downloader
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
   build_docs_and_deploy:
     runs-on: ubuntu-latest
-    name: build up document and deploy
+    name: downloader deploy
 
     steps:
     - name: Checkout
