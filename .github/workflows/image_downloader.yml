@@ -25,7 +25,7 @@ jobs:
         
         cd book_images/
         ls
-        if [ -f "0.jpg" ];then
+        if [ -f "*.jpg" ];then
            find . -name "*.jpg" | xargs git rm -rf
            git commit -m "delete some pics."
            else
