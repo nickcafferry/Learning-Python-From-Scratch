@@ -25,12 +25,9 @@ jobs:
         
         cd textbook/
         ls
-        if [ -f "*.jpg" ];then
-           find . -name "*.jpg" | xargs git rm -rf
-           git commit -m "delete some pics."
-           else
-           echo "passing"
-        fi
+
+        find . -name "*.jpg" | xargs git rm -rf
+        git commit -m "delete some pics."
 
         echo '============================================'
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Learning-Python-From-Scratch/Learning-Python-From-Scratch/source/assets/images/textbook"
