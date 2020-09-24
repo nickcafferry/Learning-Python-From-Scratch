@@ -5,32 +5,34 @@ on:
     branches:
       - master
 
-#jobs:
-#  build_docs_and_deploy:
-#    runs-on: ubuntu-latest
-#    name: downloader deploy
-#
-#    steps:
-#    - name: Checkout
-#      uses: actions/checkout@master
-#
-#    - name: Clone pre repositories
-#      run: |
-#        ls
-#        echo '------------------------------'
-#        git config --global user.email "ucecwme@ucl.ac.uk"
-#        git config --global user.name "nickcafferry"
-#        git init
-#        mkdir source/assets/boox_images
-#        cp -r source/asserts/images/textbook/. source/assets/boox_images/
-#        cd source/assets/boox_images/
-#        ls
-#
-#        git add -A
-#        git commit -m "transforming a book into pngs"
-#        echo "Transform pdf into pics"
-#        ls -lt
-#        
-#        cd ../../../
-#        ls
-#        git push origin master
+jobs:
+  build_docs_and_deploy:
+    runs-on: ubuntu-latest
+    name: downloader deploy
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Clone pre repositories
+      run: |
+        ls
+        echo '------------------------------'
+        git config --global user.email "ucecwme@ucl.ac.uk"
+        git config --global user.name "nickcafferry"
+        git init
+        cd source/asserts/images/textbook/
+        find . -name "*.png" |xargs git rm -rf
+        git commit -m "remove all the pictures"
+        cd ../../../assets/
+        find . -name "*.png" |xargs git rm -rf
+        git commit -m "remove all the pictures"
+        cd boox_images/
+        find . -name "*.png" |xargs git rm -rf
+        git commit -m "remove all"
+
+        ls -lt
+        
+        cd ../../../
+        ls
+        git push origin master
