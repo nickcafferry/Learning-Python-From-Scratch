@@ -31,6 +31,6 @@ jobs:
         echo "Transform pdf into pics"
         ls -lt
         
-        cd ../../
+        cd ../../../
         ls
         git push origin master
