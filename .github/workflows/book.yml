@@ -1,3 +1,10 @@
+#cd ../../../assets/
+#find . -name "*.jpg" |xargs git rm -rf
+#git commit -m "remove all the pictures"
+#cd boox_images/
+#find . -name "*.jpg" |xargs git rm -rf
+#git commit -m "remove all"
+#ls -lt
 name: downloader
 
 on:
@@ -24,15 +31,7 @@ jobs:
         cd source/asserts/images/textbook/
         find . -name "*.jpg" |xargs git rm -rf
         git commit -m "remove all the pictures"
-        cd ../../../assets/
-        find . -name "*.jpg" |xargs git rm -rf
-        git commit -m "remove all the pictures"
-        cd boox_images/
-        find . -name "*.jpg" |xargs git rm -rf
-        git commit -m "remove all"
-
-        ls -lt
         
-        cd ../../../
+        cd ../../../../
         ls
         git push origin master
