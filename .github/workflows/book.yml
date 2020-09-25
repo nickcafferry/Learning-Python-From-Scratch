@@ -1,11 +1,6 @@
-#cd ../../../assets/
-#find . -name "*.jpg" |xargs git rm -rf
-#git commit -m "remove all the pictures"
-#cd boox_images/
-#find . -name "*.jpg" |xargs git rm -rf
-#git commit -m "remove all"
-#ls -lt
-name: downloader
+#        find . -name "*.jpg" | xargs git rm -rf
+#        git commit -m "delete some pics."
+name: images transfers
 
 on:
   push:
@@ -15,23 +10,38 @@ on:
 jobs:
   build_docs_and_deploy:
     runs-on: ubuntu-latest
-    name: downloader deploy
+    name: running
 
     steps:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: Clone pre repositories
+    - name: running tests
       run: |
         ls
         echo '------------------------------'
         git config --global user.email "ucecwme@ucl.ac.uk"
         git config --global user.name "nickcafferry"
         git init
-        cd source/asserts/images/book_images/
-        find . -name "*.jpg" |xargs git rm -rf
-        git commit -m "remove all the pictures"
+        cd ./source/asserts/images/book_images/
+        
+        ls
+
+        echo '============================================'
+        export PATH="$PATH:/home/runner/.local/bin:/home/runner/Learning-Python-From-Scratch/Learning-Python-From-Scratch/source/asserts/images/book_images"
+        pip3 install pillow
+        pip3 install --upgrade pip
+        pip3 install wheel
+        python3.6 -m pip install -U pymupdf
+        ls -lt
+        echo "--------------------------------------------"
+        
+        python3.6 test.py
+        git add -A
+        git commit -m "transforming a book into pngs"
+        echo "Transform pdf into pics"
+        ls -lt
         
         cd ../../../../
         ls
-        git push origin master
+        git push origin master   
