@@ -22,13 +22,13 @@ jobs:
         git config --global user.name "nickcafferry"
         git init
         cd source/asserts/images/textbook/
-        find . -name "*.png" |xargs git rm -rf
+        find . -name "*.jpg" |xargs git rm -rf
         git commit -m "remove all the pictures"
         cd ../../../assets/
-        find . -name "*.png" |xargs git rm -rf
+        find . -name "*.jpg" |xargs git rm -rf
         git commit -m "remove all the pictures"
         cd boox_images/
-        find . -name "*.png" |xargs git rm -rf
+        find . -name "*.jpg" |xargs git rm -rf
         git commit -m "remove all"
 
         ls -lt
