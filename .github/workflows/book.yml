@@ -28,10 +28,10 @@ jobs:
         git config --global user.email "ucecwme@ucl.ac.uk"
         git config --global user.name "nickcafferry"
         git init
-        cd source/assets/
+        cd /source/asserts/images/book_images/
         find . -name "*.jpg" |xargs git rm -rf
         git commit -m "remove all the pictures"
         
-        cd ../../
+        cd ../../../../
         ls
         git push origin master
