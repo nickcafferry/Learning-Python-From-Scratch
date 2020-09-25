@@ -175,6 +175,9 @@ Table of Content
    
    AChapter_24_Advanced_Module_Topics/index
 
+.. raw:: html
+   :file: introduction.html
+
 License
 ==============
 
