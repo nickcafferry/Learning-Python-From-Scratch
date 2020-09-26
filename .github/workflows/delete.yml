@@ -5,30 +5,28 @@ on:
     branches:
       - master
 
-#jobs:
-#  build_docs_and_deploy:
-#    runs-on: ubuntu-latest
-#    name: build up document and deploy
-#
-#    steps:
-#    - name: Checkout
-#      uses: actions/checkout@master
-#
-#    - name: Clone pre repositories
-#      run: |
-#        ls
-#        echo '------------------------------'
-#        git config --global user.email "your email address"
-#        git config --global user.name "your user name"
-#        git init
-#        git rm -rf 项目1
-#        git commit -m "remove files"
-#        git push origin master
-#        
-#    - name: Deploy to GitHub pages
-#      uses: JamesIves/github-pages-deploy-action@master
-#      env:
-#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#        BRANCH: master
-#        FOLDER: .
-#
+jobs:
+  build_docs_and_deploy:
+    runs-on: ubuntu-latest
+    name: build up document and deploy
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Clone pre repositories
+      run: |
+        ls
+        echo '------------------------------'
+        git config --global user.email "your email address"
+        git config --global user.name "your user name"
+        git init
+        cd source/asserts/
+        git rm -rf html5-css3-3d-cube-puzzle
+        git commit -m "remove irrelevant materials"
+        git rm -rf videos
+        git commit -m "remove files"
+        cd ../../
+        git push origin master
+        
+
