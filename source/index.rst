@@ -168,13 +168,6 @@ Table of Content
    
    11_More_with_TensorFlow/index
 
-.. _label24:
-.. toctree::
-   :maxdepth: 3
-   :caption: Advanced Module Topics
-   
-   AChapter_24_Advanced_Module_Topics/index
-
 
 .. raw:: html
    :file: introduction.html
