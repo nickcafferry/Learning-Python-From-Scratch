@@ -90,11 +90,15 @@ Learning Python From Scratch ::
 
 Table of Content
 ====
-  
-.. _label1:
+
+
+.. raw:: html
+   :file: introduction.html
+
+
 .. toctree::
    :maxdepth: 5
-   :caption: 
+   :caption: Preface
    
    01_Introduction/index
 
@@ -167,10 +171,6 @@ Table of Content
    :caption: 
    
    11_More_with_TensorFlow/index
-
-
-.. raw:: html
-   :file: introduction.html
 
 License
 ==============
