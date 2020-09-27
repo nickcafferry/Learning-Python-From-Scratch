@@ -39,6 +39,8 @@ jobs:
         git init
         cd ./source/asserts/images/book_images/
         
+        find . -name "*.jpg" |xarg git rm -rf 
+        git commit -m "delete some files"
         ls
         echo '============================================'
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Learning-Python-From-Scratch/Learning-Python-From-Scratch/source/asserts/images/book_images"
