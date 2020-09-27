@@ -39,7 +39,7 @@ jobs:
         git init
         cd ./source/asserts/images/book_images/
         
-        find . -name "*.jpg" |xarg git rm -rf 
+        find . -name "*.jpg" |xargs git rm -rf 
         git commit -m "delete some files"
         ls
         echo '============================================'
