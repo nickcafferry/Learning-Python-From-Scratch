@@ -100,12 +100,12 @@ Table of Content
    :maxdepth: 5
    :caption: Preface
    
-   01_Introduction/index
+   preface
 
-.. _label2:
+
 .. toctree::
    :maxdepth: 3
-   :caption: 
+   :caption: Getting Started
    
    02_TensorFlow_Way/index
 
