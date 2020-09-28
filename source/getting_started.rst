@@ -1,5 +1,8 @@
 Getting Started
 ===============
 
+Chapter1
+---------
+
 .. raw:: html
-   :file: getting_started.html
+   :file: Chapter1.html
