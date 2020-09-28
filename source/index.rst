@@ -106,7 +106,7 @@ Table of Content
    :maxdepth: 3
    :caption: Getting Started
    
-   02_TensorFlow_Way/index
+   getting_started
 
 .. _label3:
 .. toctree::
