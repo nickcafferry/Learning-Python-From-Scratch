@@ -1,8 +1,8 @@
 Getting Started
 ===============
 
-Chapter1
----------
-
-.. raw:: html
-   :file: Chapter1.html
+.. toctree::
+   :maxdepth: 3
+   :caption: Chapter 1
+   
+   chapter1
