@@ -108,68 +108,68 @@ Table of Content
    
    getting_started
 
-.. _label3:
-.. toctree::
-   :maxdepth: 3
-   :caption: 
-   
-   03_Linear_Regression/index
 
-.. _label4:
 .. toctree::
-   :maxdepth: 3
-   :caption: 
+   :maxdepth: 5
+   :caption: Types and operations
    
-   04_Support_Vector_Machines/index
+   types_and_operations
 
-.. _label5:
-.. toctree::
-   :maxdepth: 3
-   :caption: 
-   
-   05_Nearest_Neighbor_Methods/index
 
-.. _label6:
 .. toctree::
-   :maxdepth: 3
-   :caption: 
+   :maxdepth: 5
+   :caption: Statements and syntax
    
-   06_Neural_Networks/index
+   statements_and_syntax
 
-.. _label7:
-.. toctree::
-   :maxdepth: 3
-   :caption: 
-   
-   07_Natural_Language_Processing/index
 
-.. _label8:
 .. toctree::
-   :maxdepth: 3
-   :caption: 
+   :maxdepth: 5
+   :caption: functions
    
-   08_Convolutional_Neural_Networks/index
+   functions
 
-.. _label9:
-.. toctree::
-   :maxdepth: 3
-   :caption: 
-   
-   09_Recurrent_Neural_Networks/index
 
-.. _label10:
 .. toctree::
-   :maxdepth: 3
-   :caption: 
+   :maxdepth: 5
+   :caption: modules
    
-   10_Taking_TensorFlow_to_Production/index
+   modules
+
+
+.. toctree::
+   :maxdepth: 5
+   :caption: classes and oop
+   
+   classes_and_oop
+
+
+.. toctree::
+   :maxdepth: 5
+   :caption: exceptions and tools
+   
+   exceptions_and_tools
+
+
+.. toctree::
+   :maxdepth: 5
+   :caption: advanced topics
+   
+   advanced_topics
+
+
+.. toctree::
+   :maxdepth: 5
+   :caption: Appendixes
+   
+   Appendixes
 
 .. _label11:
 .. toctree::
    :maxdepth: 3
-   :caption: 
+   :caption: index
    
-   11_More_with_TensorFlow/index
+   index_last
 
 License
 ==============
