@@ -1,4 +1,4 @@
-Chapter 3
+Chapter 3: How You Run Programs
 ============
 
 .. raw:: html
