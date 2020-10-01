@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+
+<html lang="English">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 11: Assignments, Expressions, and Prints &#8212; learning-python 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Chapter 12: If Tests and Syntax Rules" href="chapter12.html" />
+    <link rel="prev" title="Chapter 10: Introducing Python Statements" href="chapter10.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="index.html">
+          <span>learning-python 0.1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>Chapter 11: Assignments, Expressions, and Prints</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="chapter10.html">Chapter 10: Introducing Python Statements</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="chapter12.html">Chapter 12: If Tests and Syntax Rules</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content" role="main">
+        
+        
+  <div class="section" id="chapter-11-assignments-expressions-and-prints">
+<h1>Chapter 11: Assignments, Expressions, and Prints<a class="headerlink" href="#chapter-11-assignments-expressions-and-prints" title="Permalink to this headline">¶</a></h1>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/330.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/331.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/332.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/333.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/334.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/335.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/336.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/337.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/338.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/339.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/340.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/341.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/342.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/343.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/344.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/345.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/346.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/347.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/348.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/349.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/350.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/351.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/352.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/353.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/354.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/355.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/356.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/357.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/358.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/359.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/360.jpg" class="showImg" style="width:807px;height:1059px;"></a>
+<img src="https://learning-python-from-scratch.readthedocs.io/en/latest/_static/images/book_images/361.jpg" class="showImg" style="width:807px;height:1059px;"></a></div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="chapter10.html">Chapter 10: Introducing Python Statements</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="chapter12.html">Chapter 12: If Tests and Syntax Rules</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright - Wei MEI (Nick Cafferry)..
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.3.0+.
+    </div>
+  </body>
+</html>
