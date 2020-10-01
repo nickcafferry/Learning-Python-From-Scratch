@@ -1,4 +1,4 @@
-Chapter 2
+Chapter 2: How Python Runs Programs
 =========
 
 .. raw:: html
