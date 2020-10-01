@@ -1,4 +1,4 @@
-Chapter 4
+Chapter 4: Introducing Python Object Types
 ==========
 
 .. raw:: html
