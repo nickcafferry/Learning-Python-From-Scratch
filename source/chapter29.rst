@@ -1,4 +1,4 @@
-Chapter 29: Iteration and comprehension part II
+Chapter 29: Operator Overloading
 ========================================
 
 .. raw:: html
