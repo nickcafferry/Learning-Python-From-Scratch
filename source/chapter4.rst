@@ -1,3 +1,4 @@
+.. _label4:
 Chapter 4: Introducing Python Object Types
 ==========
 
