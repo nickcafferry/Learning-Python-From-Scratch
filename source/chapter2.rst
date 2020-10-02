@@ -1,3 +1,4 @@
+.. _label2:
 Chapter 2: How Python Runs Programs
 =========
 
