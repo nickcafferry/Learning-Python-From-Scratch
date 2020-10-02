@@ -1,3 +1,4 @@
+.. _label10:
 Chapter 10: Introducing Python Statements
 =======================
 
