@@ -1,3 +1,4 @@
+.. _label5:
 Chapter 5: Numeric Types
 =======================
 
