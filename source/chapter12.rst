@@ -1,3 +1,4 @@
+.. _label12:
 Chapter 12: If Tests and Syntax Rules
 ========================================
 
