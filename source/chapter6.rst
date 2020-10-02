@@ -1,3 +1,4 @@
+.. _label6:
 Chapter 6: The Dynamic Typing Interlude
 =======================
 
