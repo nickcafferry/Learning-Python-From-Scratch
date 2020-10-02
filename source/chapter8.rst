@@ -1,3 +1,4 @@
+.. _label8:
 Chapter 8: Lists and Dictionaries
 =================================
 
