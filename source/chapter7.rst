@@ -1,3 +1,4 @@
+.. _label7:
 Chapter 7: Strings
 ===================
 
