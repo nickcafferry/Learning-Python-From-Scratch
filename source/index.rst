@@ -52,9 +52,61 @@ Learning Python From Scratch ::
    
    - :ref:`Chapter 11 <label11>`
    
-   - ...
+   - :ref:`Chapter 12 <label12>`
+   
+   - :ref:`Chapter 13 <label13>`
+   
+   - :ref:`Chapter 14 <label14>`
+   
+   - :ref:`Chapter 15 <label15>`
+   
+   - :ref:`Chapter 16 <label16>`
+   
+   - :ref:`Chapter 17 <label17>`
+   
+   - :ref:`Chapter 18 <label18>`
+   
+   - :ref:`Chapter 19 <label19>`
+   
+   - :ref:`Chapter 20 <label20>`
+   
+   - :ref:`Chapter 21 <label21>`
+   
+   - :ref:`Chapter 22 <label22>`
+   
+   - :ref:`Chapter 23 <label23>`
    
    - :ref:`Chapter 24: Advanced Module Topics<label24>` 
+   
+   - :ref:`Chapter 25 <label25>`
+   
+   - :ref:`Chapter 26 <label26>`
+   
+   - :ref:`Chapter 27 <label27>`
+   
+   - :ref:`Chapter 28 <label28>`
+   
+   - :ref:`Chapter 29 <label29>`
+   
+   - :ref:`Chapter 30 <label30>`
+   
+   - :ref:`Chapter 31 <label31>`
+   
+   - :ref:`Chapter 32 <label32>`
+   
+   - :ref:`Chapter 33 <label33>`
+   
+   - :ref:`Chapter 34 <label34>`
+   
+   - :ref:`Chapter 35 <label35>`
+   
+   - :ref:`Chapter 36 <label36>`
+   
+   - :ref:`Chapter 37 <label37>`
+   
+   - :ref:`Chapter 38 <label38>`
+   
+   - :ref:`Chapter 39 <label39>`
 
 -------------
 
