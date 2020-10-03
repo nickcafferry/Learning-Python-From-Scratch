@@ -1,3 +1,4 @@
+.. _label15:
 Chapter 15: The Documentation Interlude
 ========================================
 
