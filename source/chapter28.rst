@@ -1,3 +1,4 @@
+.. _label28:
 Chapter 28: Class Coding Details
 ========================================
 
