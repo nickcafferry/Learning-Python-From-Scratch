@@ -1,3 +1,4 @@
+.. _label13:
 Chapter 13: while and for Loops
 ========================================
 
