@@ -1,3 +1,4 @@
+.. _label30:
 Chapter 30: Designing with Classes
 ========================================
 
