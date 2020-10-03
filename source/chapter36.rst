@@ -1,3 +1,4 @@
+.. _label36:
 Chapter 36: Unicode and Byte Strings
 ========================================
 
