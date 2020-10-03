@@ -1,3 +1,4 @@
+.. _label33:
 Chapter 33: Exeception Coding Basics
 ========================================
 
