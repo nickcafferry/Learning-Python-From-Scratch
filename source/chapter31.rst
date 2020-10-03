@@ -1,3 +1,4 @@
+.. _label31:
 Chapter 31: Advanced Class Topics
 ========================================
 
