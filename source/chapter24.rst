@@ -1,3 +1,4 @@
+.. _label24:
 Chapter 24: Advanced Module Topics
 ========================================
 
