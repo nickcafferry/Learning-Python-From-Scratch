@@ -1,3 +1,4 @@
+.. _label22:
 Chapter 22: Module Coding Basics
 ========================================
 
