@@ -1,3 +1,4 @@
+.. _label37:
 Chapter 37: Managed Attributes
 ========================================
 
