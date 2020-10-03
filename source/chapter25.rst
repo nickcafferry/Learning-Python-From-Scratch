@@ -1,5 +1,5 @@
 .. _label25:
-hapter 25: The Big Picture
+Chapter 25: The Big Picture
 ========================================
 
 .. raw:: html
