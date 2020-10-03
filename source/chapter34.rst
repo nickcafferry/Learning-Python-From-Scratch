@@ -1,3 +1,4 @@
+.. _label34:
 Chapter 34: Exception Objects
 ========================================
 
