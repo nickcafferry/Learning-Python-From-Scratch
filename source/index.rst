@@ -113,7 +113,7 @@ Learning Python From Scratch ::
 
 .. raw:: html
 
-    <div class="zzsc-content">
+    <div class="zzsc-content" align="center">
 	         <canvas id="clock1_" width="200px" height="200px">
 	         </canvas>
     </div>
