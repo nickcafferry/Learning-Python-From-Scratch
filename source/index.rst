@@ -6,7 +6,7 @@
    :target: https://learning-python-from-scratch.readthedocs.io/en/latest/?badge=latest
 .. |MIT License| image:: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
    :target: http://choosealicense.com/licenses/mit/
-.. |Python version| image:: https://img.shields.io/badge/python-3.7%20,3.8-brightgreen.svg
+.. |Python version| image:: https://img.shields.io/badge/python-3.7,%203.8-brightgreen.svg
    :target: https://www.python.org/
 
 Copyright |copy| Wei MEI, |MLMS (TM)| |---|
