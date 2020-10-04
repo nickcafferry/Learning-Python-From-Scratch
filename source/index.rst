@@ -226,3 +226,8 @@ License
 
 See `MIT LICENSE <https://github.com/nickcafferry/tensorflow/blob/master/LICENSE>`_
 
+Comments
+=========
+
+.. raw:: html
+   :file: comments.html
