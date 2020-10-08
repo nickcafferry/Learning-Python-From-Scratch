@@ -4,7 +4,7 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath("../../source/"))
 
-project = u'learning-python'
+project = u'learning python from scratch'
 copyright = u'- Wei MEI (Nick Cafferry).'
 author = u'Wei MEI'
 
@@ -35,6 +35,8 @@ pygments_style = 'default'
 
 html_static_path = ['asserts']
 html_theme = 'haiku'
+html_logo = 'GCC.svg'
+html_favicon = 'GCC.svg'
 html_theme_options = {
     'logo_only': False,
     'style_nav_header_background': '#343131',
