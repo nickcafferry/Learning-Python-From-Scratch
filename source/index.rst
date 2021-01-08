@@ -26,7 +26,7 @@ Learning Python From Scratch (version : |version|)
 
 Learning Python From Scratch ::
    How to learn python from scratch. Python is a popular open source programming language used for both standalone programs and scripting applications. Free, portable, powerful, and easy to learn, and fun to use are what make python outstanding among many programming language. This repository is to bring you quickly up to speed on the fundamentals of the core Python language. 
-
+-------------------------------------------------------------
 
 .. important::
 
