@@ -36,6 +36,12 @@ Classes and OOP
    :caption: Chapter 30
 
    chapter30
+   
+.. toctree::
+   :maxdepth: 5
+   :caption: Chapter 30 Reading Comments
+
+   chapter30_reading_comments
 
 .. toctree::
    :maxdepth: 5
