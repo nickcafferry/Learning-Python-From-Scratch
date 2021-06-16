@@ -82,3 +82,12 @@ To illustrate, let’s put that pizza-making robot we talked about at the start 
     ...         obj = klass(klass.__name__)
     ...         obj.work()
     
+    <Employee: name=bob, salary = 50000>
+    bob makes pizza
+    <Employee: name=bob, salary = 60000.0>
+
+    Employee does stuff
+    Chef makes food
+    Server interfaces with customer
+    PizzaRobot makes pizza
+    
