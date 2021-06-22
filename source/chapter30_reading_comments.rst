@@ -176,3 +176,16 @@ persistent restaurant database.Instances of classes can be stored away on disk i
   ...  with open("1.pickle", "rb") as file:
   ...      obj = pickle.load(file)
   ...  print(obj)
+
+params are parameter names and "python" is value and if there are many parameters, just use "&" between two parameters.
+
+.. code:: python
+
+  >>> import requests
+  >>> r = requests.get("https://www.baidu.com/s?wd=python")
+  >>> url = "https://www.baidu.com/s"
+  >>> params = {"wd": "python"}
+  >>> r = requests.get(url, params=params)
+  >>> print(r.url)
+  
+  
