@@ -90,7 +90,39 @@ To illustrate, let’s put that pizza-making robot we talked about at the start 
     Chef makes food
     Server interfaces with customer
     PizzaRobot makes pizza
-    
+
+Stream Processors Revisited
+-----------------------------
+
+For a more realistic composition example, recall the generic data stream processor function we partially coded in the introduction to OOP in Chapter 25:
+
+.. code:: python
+
+  >>> def processor(reader, converter, writer):
+          while 1:
+              data = reader.read()
+              if not data: break
+              data = converter(data)
+              writer.write(data)
+ 
+Rather than using a simple function here, we might code this as a class that uses composition to do its work to provide more structure and support inheritance. The following file, ```streams.py```, demonstrates one way to code the class:
+
+.. code:: python
+
+  >>> class Processor:
+      def __init__(self, reader, writer):
+          self.reader = reader
+          self.writer = writer
+      def processor(self):
+          while 1:
+              data = self.reader.readline()
+              if not data: break
+              data = self.converter(data)
+              self.writer.write(data)
+      def converter(self,data):
+          assert False, "converter must be defined" # Or raise exception
+
+
 Why You Will Care: Classes and Persistence
 --------------------------------------------
 
