@@ -188,4 +188,11 @@ params are parameter names and "python" is value and if there are many parameter
   >>> r = requests.get(url, params=params)
   >>> print(r.url)
   
-  
+Chapter 25. OOP：The Big Picture
+---------------------------------
+
+So far in this book, we’ve been using the term “object” generically. Really, the code written up to this point has been object-based—we’ve passed objects around our scripts, used them in expressions, called their methods, and so on. For our code to qualify as being truly object-oriented (OO), though, our objects will generally need to also participate in something called an inheritance hierarchy.
+
+.. code:: python
+   :file: text.py
+
