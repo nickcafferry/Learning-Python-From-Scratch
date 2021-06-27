@@ -193,6 +193,7 @@ Chapter 25. OOP：The Big Picture
 
 So far in this book, we’ve been using the term “object” generically. Really, the code written up to this point has been object-based—we’ve passed objects around our scripts, used them in expressions, called their methods, and so on. For our code to qualify as being truly object-oriented (OO), though, our objects will generally need to also participate in something called an inheritance hierarchy.
 
-.. raw:: python
-   :file: text.py
+.. literalinclude:: text.py
+   :language: python
+   :linesno:
 
