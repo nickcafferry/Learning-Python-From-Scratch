@@ -195,5 +195,5 @@ So far in this book, we’ve been using the term “object” generically. Reall
 
 .. literalinclude:: text.py
    :language: python
-   :linesnos:
+   :linenos:
 
