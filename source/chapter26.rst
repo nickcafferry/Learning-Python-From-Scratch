@@ -28,3 +28,9 @@ Chapter 26: Class Coding Basics
    New value
    
    >>> x.anothername = "spam"
+
+
+
+.. literalinclude:: Chapter26_Class_Coding_Basics.py
+   :language: python
+   :linenos:
