@@ -15,6 +15,12 @@ Classes and OOP
 
 .. toctree::
    :maxdepth: 5
+   :caption: Class Coding Basics
+   
+   Chapter26_Class_Coding_Basics
+
+.. toctree::
+   :maxdepth: 5
    :caption: Chapter 27
 
    chapter27
