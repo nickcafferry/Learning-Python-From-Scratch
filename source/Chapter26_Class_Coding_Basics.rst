@@ -71,7 +71,6 @@ To begin, let's define a class named FirstClass by running a Python class statem
 	Classes and instances are linked namespace objects in a class tree that is searched by inheritance.
 	
 .. code:: python
-
 	>>> class FirstClass:
 	...		def setdata(self, value):
 	...			self.data = value
