@@ -86,3 +86,7 @@ To begin, let's define a class named FirstClass by running a Python class statem
 	
 
 :strong:`By redefining attributes in subclasses that appear lower in the hierarchy, we override the more general definitions of those attributes higher in the tree.`
+
+.. literalinclude:: Chapter26_Class_Coding_Basics.py
+   :language: python
+   :linesno: 
