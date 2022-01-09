@@ -6,7 +6,20 @@ As in C++. the class statement is Python's main OOP tool, but unlike in C++, Pyt
 
 The main distinction for classes is that :strong:`their namespaces are also the basis of inheritance in a class or instance object are fetched from other classes`.
 
-:italic:`All the statements inside the class statement run when the class statement itself runs (not when the class is later called to make an instance). Assigning names inside the class statement makes class attributes, and nested defs make class methods, but other assignments make attributes, too.`
+:strong:`All the statements inside the class statement run when the class statement itself runs (not when the class is later called to make an instance). Assigning names inside the class statement makes class attributes, and nested defs make class methods, but other assignments make attributes, too.`
+
+
+.. code:: python
+
+   >>> class sharedata:
+         data = 1
+   >>> sharedata.data
+   1
+   >>> class sharedata:
+         class bigdata:
+               data = 1
+   >>> sharedata.bigdata.data
+   1
 
 .. code:: python
 
