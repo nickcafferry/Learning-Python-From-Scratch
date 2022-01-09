@@ -23,6 +23,17 @@ The main distinction for classes is that :strong:`their namespaces are also the 
 
 .. code:: python
 
+   >>> class sharedata:
+         data = 78
+   >>> x = sharedata(); y = sharedata()
+   >>> x.data, y.data
+   (78, 78)
+   >>> x.data = 89; y.data = 91
+   >>> x.data, y.data, sharedata.data
+   
+
+.. code:: python
+
    >>> classs <name> (superclass, ...):
             data = value
             def method(self,...):
