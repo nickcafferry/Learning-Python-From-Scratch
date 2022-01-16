@@ -60,6 +60,55 @@ The main distinction for classes is that :strong:`their namespaces are also the 
    >>> print(example2)
    ... 32
    
+
+.. code:: python
+
+   # Methods 
+   # Concept: methods provide behavior for instance objects to inherit
+   # Programming perspective: simple as functions, except that python automatically maps instance method calls to
+   # class method functions as follows.
+   
+   >>> class NextClass:
+            def printer(self, text):
+               self.message = text
+               print(self.message)
+   >>> x = NextClass()
+   >>> x.printer('instance call')
+   ... 'instance call'
+   >>> x.message
+   ... 'instance call'
+   
+   >>> dir(NextClass)
+   ['__class__',
+   '__delattr__',
+   '__dict__',
+   '__dir__',
+   '__doc__',
+   '__eq__',
+   '__format__',
+   '__ge__',
+   '__getattribute__',
+   '__gt__',
+   '__hash__',
+   '__init__',
+   '__init_subclass__',
+   '__le__',
+   '__lt__',
+   '__module__',
+   '__ne__',
+   '__new__',
+   '__reduce__',
+   '__reduce_ex__',
+   '__repr__',
+   '__setattr__',
+   '__sizeof__',
+   '__str__',
+   '__subclasshook__',
+   '__weakref__',
+   'printer']
+   >>> NextClass.printer(x, 'class call') #Direct class call
+   >>> x.message
+   
    
 .. raw:: html
    :file: Chapter28.html
