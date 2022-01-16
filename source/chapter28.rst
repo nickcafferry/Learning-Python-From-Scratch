@@ -39,5 +39,27 @@ The main distinction for classes is that :strong:`their namespaces are also the 
             def method(self,...):
                self.member = value
 
+
+.. code:: python
+
+   >>> class SharedData:
+            global spam
+            spam = 42
+            def __init__(self):
+               self.spam = spam
+            class subclass():
+               def __init__(self,spam):
+                  super().__init__()
+                  self.spam = spam
+            def __str__(self):
+               return str(self.spam)
+   >>> example1 = SharedData()
+       example1.spam
+   ... 42
+   >>> example2 = example1.subclass(32)
+   >>> print(example2)
+   ... 32
+   
+   
 .. raw:: html
    :file: Chapter28.html
